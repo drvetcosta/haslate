@@ -7,23 +7,23 @@
 system:
   # If you have multiple devices it's a good idea to give them different
   # names.
-  hostname: $$HOSTNAME$$
+  hostname: KoboTouch
   # Wireless network configuration
   # Detected access points:
   # $$ACCESS_POINTS$$
   wifi:
-    ssid: $$WIFI_SSID$$
-    password: WIFI_PASSWORD
+    ssid: SFR_6358
+    password: 34mikq2agj83uqgt2hey
     # Something in the stack doesn't work properly with WPA3, so
     # default to forcing WPA2
     force_wpa2: true
   # Timezone: a timezone database name, "Europe/Stockholm" for example.
-  timezone: "UTC"
+  timezone: "UTC+1"
 
 # Application configuration
 application:
-  homeassistant_uri: "ws://host:8123/api/websocket"
-  homeassistant_token: "TOKEN"
+  homeassistant_uri: "ws://192.168.1.210:8123/api/websocket"
+  homeassistant_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmZGZhYmE1NmRlMjA0ZGM4OWVlOTQ3MjE5Y2M0MDc0MiIsImlhdCI6MTc0NDYxODMxOCwiZXhwIjoyMDU5OTc4MzE4fQ.mirnT7OPHwP1f8hzF4ogWpT9dnKCC2IyCPiTRK_jaeQ"
   # How many widget cells across and down should there be on each page?
   grid: [12, 8]
   # Definitions for each page
